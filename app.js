@@ -86,7 +86,7 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
         document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
 
         // Уг тоглогч хожсон эсэхийг шалгана.
-        if(scores[activePlayer] >= 20){
+        if(scores[activePlayer] >= 100){
             // Тоглоомыг дууссанд тооцно.
             isNewGame = false;
 

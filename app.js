@@ -8,7 +8,7 @@ var activePlayer;
 // Хоёр тоглогчийн цуглуулсан оноонууд
 var scores;
 
-// Идэвхитэй тоглогчийн цуглуулж байгаа ээлжийн оноо.
+// Идэвхтэй тоглогчийн цуглуулж байгаа ээлжийн оноо.
 var roundScore;
 
 // Шооны зургийг үзүүлэх элементийг Dom-оос хайж энд хадгална.
@@ -58,7 +58,7 @@ document.querySelector(".btn-roll").addEventListener("click", function(){
         // 1-6 гэсэн утгыг хувьсагчид санамсаргүйгээр үүсгэж өгнө.
         var diceNumber = Math.floor(Math.random() * 6)+ 1;
             
-        // Шооны зургыг веб дээр гаргаж ирнэ.
+        // Шооны зургийг веб дээр гаргаж ирнэ.
         diceDom.style.display = "block";
             
         // Буусан санамсаргүй тоонд харгалзах шооны зургийг веб дээр гаргана.
@@ -82,7 +82,7 @@ document.querySelector(".btn-roll").addEventListener("click", function(){
 document.querySelector('.btn-hold').addEventListener('click', function(){
     if(isNewGame){
         scores[activePlayer] = scores[activePlayer] + roundScore; 
-        // Дэлгэцэн дээрх оноог өөрчлөнө.
+        // Дэлгэцэн дээрх оноог өөрчилнө.
         document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
 
         // Уг тоглогч хожсон эсэхийг шалгана.

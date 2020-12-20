@@ -121,5 +121,5 @@ function switchToNextPlayer(){
     diceDom.style.display = "none";
 };
 
-// New Game | Шинэ тоглоом эхлүүлэх товчийн эвент листенер
+// Шинэ тоглоом эхлүүлэх товчийн эвент листенер
 document.querySelector('.btn-new').addEventListener("click", initGame);
